@@ -6,7 +6,7 @@
     <groupId>com.pearl</groupId>
     <artifactId>first-jenkins-git</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>First Jenkins Git</name>
     <description>A simple project for Jenkins CI/CD</description>
