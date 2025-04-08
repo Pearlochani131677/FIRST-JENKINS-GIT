@@ -3,14 +3,12 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Pearlochani131677/FIRST-JENKINS-GIT
-.git'
+                git branch: 'main', url: 'https://github.com/Pearlochani131677/FIRST-JENKINS-GIT.git'
             }
         }
         stage('Build Docker Image') {
             steps {
-                dir('DockerJenkinsExperiment') {
-                    sh 'ls -l'
+                dir('webapp') {
                     sh 'docker build -t my-docker-webapp .'
                 }
             }
